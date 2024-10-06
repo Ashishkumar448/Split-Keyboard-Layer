@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>(Scrolling) Split Keyboard Layer Visualization</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="views" class="views">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+</div>
+<div id="layers" class="layers">
+    <div class="item active">
+        <div class="scene">
+            <div class="keyboard">
+                <div class="left">
+                    <labs-key tag="&kp Q" style="--index:0" value="Q"></labs-key>
+                    <labs-key tag="&kp W" style="--index:0" value="W"></labs-key>
+                    <labs-key tag="&kp F" style="--index:0" value="F"></labs-key>
+                    <labs-key tag="&kp P" style="--index:0" value="P"></labs-key>
+                    <labs-key tag="&kp B" style="--index:0" value="B"></labs-key>
+
+                    <labs-key tag="&kp A" style="--index:1" value="A"></labs-key>
+                    <labs-key tag="&kp R" style="--index:1" value="R"></labs-key>
+                    <labs-key tag="&kp S" style="--index:1" value="S"></labs-key>
+                    <labs-key tag="&kp T" style="--index:1" value="T"></labs-key>
+                    <labs-key tag="&kp G" style="--index:1" value="G"></labs-key>
+
+                    <labs-key tag="&kp Z" style="--index:2" value="Z"></labs-key>
+                    <labs-key tag="&kp X" style="--index:2" value="X"></labs-key>
+                    <labs-key tag="&kp C" style="--index:2" value="C"></labs-key>
+                    <labs-key tag="&kp D" style="--index:2" value="D"></labs-key>
+                    <labs-key tag="&kp V" style="--index:2" value="V"></labs-key>
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <labs-key tag="&mo NAV" style="--index:3" value="Mo(NAV)"></labs-key>
+                    <labs-key tag="&kp LSHIFT" style="--index:3" value="LSHIFT"></labs-key>
+                </div>
+
+                <div class="right">
+                    <labs-key tag="&kp J" style="--index:0" value="J"></labs-key>
+                    <labs-key tag="&kp L" style="--index:0" value="L"></labs-key>
+                    <labs-key tag="&kp U" style="--index:0" value="U"></labs-key>
+                    <labs-key tag="&kp Y" style="--index:0" value="Y"></labs-key>
+                    <labs-key tag="&kp SQT" style="--index:0" value="SQT"></labs-key>
+
+                    <labs-key tag="&kp M" style="--index:1" value="M"></labs-key>
+                    <labs-key tag="&kp N" style="--index:1" value="N"></labs-key>
+                    <labs-key tag="&kp E" style="--index:1" value="E"></labs-key>
+                    <labs-key tag="&kp I" style="--index:1" value="I"></labs-key>
+                    <labs-key tag="&kp O" style="--index:1" value="O"></labs-key>
+
+                    <labs-key tag="&kp K" style="--index:2" value="K"></labs-key>
+                    <labs-key tag="&kp H" style="--index:2" value="H"></labs-key>
+                    <labs-key tag="&kp COMMA" style="--index:2" value="COMMA"></labs-key>
+                    <labs-key tag="&kp DOT" style="--index:2" value="DOT"></labs-key>
+                    <labs-key tag="&kp FSLH" style="--index:2" value="FSLH"></labs-key>
+
+                    <labs-key tag="&kp SPC" style="--index:3" value="SPC"></labs-key>
+                    <labs-key tag="&mo SYM" style="--index:3" value="Mo(SYM)"></labs-key>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="scene">
+            <div class="keyboard">
+                <div class="left">
+                    <labs-key tag="&kp Q" style="--index:0" value="Q"></labs-key>
+                    <labs-key tag="&kp W" style="--index:0" value="W"></labs-key>
+                    <labs-key tag="&kp E" style="--index:0" value="E"></labs-key>
+                    <labs-key tag="&kp R" style="--index:0" value="R"></labs-key>
+                    <labs-key tag="&kp T" style="--index:0" value="T"></labs-key>
+
+                    <labs-key tag="&kp A" style="--index:1" value="A"></labs-key>
+                    <labs-key tag="&kp S" style="--index:1" value="S"></labs-key>
+                    <labs-key tag="&kp D" style="--index:1" value="D"></labs-key>
+                    <labs-key tag="&kp F" style="--index:1" value="F"></labs-key>
+                    <labs-key tag="&kp G" style="--index:1" value="G"></labs-key>
+
+                    <labs-key tag="&kp Z" style="--index:2" value="Z"></labs-key>
+                    <labs-key tag="&kp X" style="--index:2" value="X"></labs-key>
+                    <labs-key tag="&kp C" style="--index:2" value="C"></labs-key>
+                    <labs-key tag="&kp V" style="--index:2" value="V"></labs-key>
+                    <labs-key tag="&kp B" style="--index:2" value="B"></labs-key>
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <labs-key tag="&mo NAV" style="--index:3" value="Mo(NAV)"></labs-key>
+                    <labs-key tag="&kp LSHIFT" style="--index:3" value="LSHIFT"></labs-key>
+                </div>
+
+                <div class="right">
+                    <labs-key tag="&kp Y" style="--index:0" value="Y"></labs-key>
+                    <labs-key tag="&kp U" style="--index:0" value="U"></labs-key>
+                    <labs-key tag="&kp I" style="--index:0" value="I"></labs-key>
+                    <labs-key tag="&kp O" style="--index:0" value="O"></labs-key>
+                    <labs-key tag="&kp P" style="--index:0" value="P"></labs-key>
+
+                    <labs-key tag="&kp H" style="--index:1" value="H"></labs-key>
+                    <labs-key tag="&kp J" style="--index:1" value="J"></labs-key>
+                    <labs-key tag="&kp K" style="--index:1" value="K"></labs-key>
+                    <labs-key tag="&kp L" style="--index:1" value="L"></labs-key>
+                    <labs-key tag="&kp SQT" style="--index:1" value="SQT"></labs-key>
+
+                    <labs-key tag="&kp N" style="--index:2" value="N"></labs-key>
+                    <labs-key tag="&kp M" style="--index:2" value="M"></labs-key>
+                    <labs-key tag="&kp COMMA" style="--index:2" value="COMMA"></labs-key>
+                    <labs-key tag="&kp DOT" style="--index:2" value="DOT"></labs-key>
+                    <labs-key tag="&kp FSLH" style="--index:2" value="FSLH"></labs-key>
+
+                    <labs-key tag="&kp SPC" style="--index:3" value="SPC"></labs-key>
+                    <labs-key tag="&mo SYM" style="--index:3" value="Mo(SYM)"></labs-key>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="scene">
+            <div class="keyboard">
+                <div class="left">
+                    <labs-key tag="&kp ESC" style="--index:0" value="ESC"></labs-key>
+                    <labs-key tag="&am LALT LEFT" style="--index:0" value="LALT+LEFT"></labs-key>
+                    <labs-key tag="&am LCTRL F" style="--index:0" value="LCTRL+F"></labs-key>
+                    <labs-key tag="&am LALT RIGHT" style="--index:0" value="LALT+RIGHT"></labs-key>
+                    <labs-key tag="&kp INS" style="--index:0" value="INS"></labs-key>
+
+                    <labs-key tag="&sk LALT" style="--index:1" value="LALT"></labs-key>
+                    <labs-key tag="&sk LGUI" style="--index:1" value="LGUI"></labs-key>
+                    <labs-key tag="&kp RSHIFT" style="--index:1" value="RSHIFT"></labs-key>
+                    <labs-key tag="&sk LCTL" style="--index:1" value="LCTL"></labs-key>
+                    <labs-key tag="&kp RALT" style="--index:1" value="RALT"></labs-key>
+
+                    <labs-key tag="&am LGUI Z" style="--index:2" value="LGUI+Z"></labs-key>
+                    <labs-key tag="&am LGUI X" style="--index:2" value="LGUI+X"></labs-key>
+                    <labs-key tag="&am LGUI C" style="--index:2" value="LGUI+C"></labs-key>
+                    <labs-key tag="&kp LGUI" style="--index:2" value="LGUI"></labs-key>
+                    <labs-key tag="&am LGUI V" style="--index:2" value="LGUI+V"></labs-key>
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <labs-key tag="&kp RET" style="--index:3" value="RET"></labs-key>
+                    <labs-key tag="&mo FUN" style="--index:3" value="Mo(FUN)"></labs-key>
+                </div>
+
+                <div class="right">
+                    <labs-key tag="&kp PG_UP" style="--index:0" value="PG_UP"></labs-key>
+                    <labs-key tag="&kp PG_DN" style="--index:0" value="PG_DN"></labs-key>
+                    <labs-key tag="&kp HOME" style="--index:0" value="HOME"></labs-key>
+                    <labs-key tag="&kp END" style="--index:0" value="END"></labs-key>
+                    <labs-key tag="&kp CAPS" style="--index:0" value="CAPS"></labs-key>
+
+                    <labs-key tag="&kp LEFT" style="--index:1" value="LEFT"></labs-key>
+                    <labs-key tag="&kp DOWN" style="--index:1" value="DOWN"></labs-key>
+                    <labs-key tag="&kp UP" style="--index:1" value="UP"></labs-key>
+                    <labs-key tag="&kp RIGHT" style="--index:1" value="RIGHT"></labs-key>
+                    <labs-key tag="&kp DEL" style="--index:1" value="DEL"></labs-key>
+
+                    <labs-key tag="&kp RET" style="--index:2" value="RET"></labs-key>
+                    <labs-key tag="&kp BSPC" style="--index:2" value="BSPC"></labs-key>
+                    <labs-key tag="&kp TAB" style="--index:2" value="TAB"></labs-key>
+                    <labs-key tag="&kp K_APP" style="--index:2" value="K_APP"></labs-key>
+                    <labs-key tag="&kp C_AC_PRINT" style="--index:2" value="C_AC_PRINT"></labs-key>
+
+                    <labs-key tag="&kp SPC" style="--index:3" value="SPC"></labs-key>
+                    <labs-key tag="&mo SYM" style="--index:3" value="Mo(SYM)"></labs-key>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="scene">
+            <div class="keyboard">
+                <div class="left">
+                    <labs-key tag="&kp EXCL" style="--index:0" value="EXCL"></labs-key>
+                    <labs-key tag="&kp AT" style="--index:0" value="AT"></labs-key>
+                    <labs-key tag="&kp HASH" style="--index:0" value="HASH"></labs-key>
+                    <labs-key tag="&kp DLLR" style="--index:0" value="DLLR"></labs-key>
+                    <labs-key tag="&kp PRCNT" style="--index:0" value="PRCNT"></labs-key>
+
+                    <labs-key tag="&kp CARET" style="--index:1" value="CARET"></labs-key>
+                    <labs-key tag="&kp STAR" style="--index:1" value="STAR"></labs-key>
+                    <labs-key tag="&kp LPAR" style="--index:1" value="LPAR"></labs-key>
+                    <labs-key tag="&kp LBRC" style="--index:1" value="LBRC"></labs-key>
+                    <labs-key tag="&kp LBKT" style="--index:1" value="LBKT"></labs-key>
+
+                    <labs-key tag="&kp BSLH" style="--index:2" value="BSLH"></labs-key>
+                    <labs-key tag="&kp PIPE" style="--index:2" value="PIPE"></labs-key>
+                    <labs-key tag="&kp AMPS" style="--index:2" value="AMPS"></labs-key>
+                    <labs-key tag="&kp TILDE" style="--index:2" value="TILDE"></labs-key>
+                    <labs-key tag="&kp MINUS" style="--index:2" value="MINUS"></labs-key>
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <labs-key tag="&trans" style="--index:3" value="Trans"></labs-key>
+                    <labs-key tag="&mo NUMB" style="--index:3" value="Mo(NUMB)"></labs-key>
+
+                </div>
+
+                <div class="right">
+                    <labs-key tag="&kp EQUAL" style="--index:0" value="EQUAL"></labs-key>
+                    <labs-key tag="&kp GRAVE" style="--index:0" value="GRAVE"></labs-key>
+                    <labs-key tag="&kp COLON" style="--index:0" value="COLON"></labs-key>
+                    <labs-key tag="&kp SEMI" style="--index:0" value="SEMI"></labs-key>
+                    <labs-key tag="&kp PLUS" style="--index:0" value="PLUS"></labs-key>
+
+                    <labs-key tag="&kp STAR" style="--index:1" value="STAR"></labs-key>
+                    <labs-key tag="&kp LPAR" style="--index:1" value="LPAR"></labs-key>
+                    <labs-key tag="&kp RPAR" style="--index:1" value="RPAR"></labs-key>
+                    <labs-key tag="&kp RBRC" style="--index:1" value="RBRC"></labs-key>
+                    <labs-key tag="&kp RBKT" style="--index:1" value="RBKT"></labs-key>
+
+                    <labs-key tag="&kp UNDER" style="--index:2" value="UNDER"></labs-key>
+                    <labs-key tag="&kp TILDE" style="--index:2" value="TILDE"></labs-key>
+                    <labs-key tag="&kp FSLH" style="--index:2" value="FSLH"></labs-key>
+                    <labs-key tag="&kp AMPS" style="--index:2" value="AMPS"></labs-key>
+                    <labs-key tag="&kp MINUS" style="--index:2" value="MINUS"></labs-key>
+
+                    <labs-key tag="&kp SPC" style="--index:3" value="SPC"></labs-key>
+                    <labs-key tag="&mo NUMB" style="--index:3" value="Mo(NUMB)"></labs-key>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="scene">
+            <div class="keyboard">
+                <div class="left">
+                    <labs-key tag="&kp C_STOP" style="--index:0" value="C_STOP"></labs-key>
+                    <labs-key tag="&kp C_PREV" style="--index:0" value="C_PREV"></labs-key>
+                    <labs-key tag="&kp C_PP" style="--index:0" value="C_PP"></labs-key>
+                    <labs-key tag="&kp C_NEXT" style="--index:0" value="C_NEXT"></labs-key>
+                    <labs-key tag="&kp C_BRI_UP" style="--index:0" value="C_BRI_UP"></labs-key>
+
+                    <labs-key tag="&sk LALT" style="--index:1" value="LALT"></labs-key>
+                    <labs-key tag="&sk LGUI" style="--index:1" value="LGUI"></labs-key>
+                    <labs-key tag="&kp RSHIFT" style="--index:1" value="RSHIFT"></labs-key>
+                    <labs-key tag="&sk LCTL" style="--index:1" value="LCTL"></labs-key>
+                    <labs-key tag="&kp C_BRI_DN" style="--index:1" value="C_BRI_DN"></labs-key>
+
+                    <labs-key tag="&kp C_MUTE" style="--index:2" value="C_MUTE"></labs-key>
+                    <labs-key tag="&kp C_VOL_DN" style="--index:2" value="C_VOL_DN"></labs-key>
+                    <labs-key tag="&kp BSLH" style="--index:2" value="BSLH"></labs-key>
+                    <labs-key tag="&kp C_VOL_UP" style="--index:2" value="C_VOL_UP"></labs-key>
+                    <labs-key tag="&kp AMPS" style="--index:2" value="AMPS"></labs-key>
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <labs-key tag="&kp RET" style="--index:3" value="RET"></labs-key>
+                    <labs-key tag="&mo FUN" style="--index:3" value="Mo(FUN)"></labs-key>
+                </div>
+
+                <div class="right">
+                    <labs-key tag="&kp F12" style="--index:0" value="F12"></labs-key>
+                    <labs-key tag="&kp F7" style="--index:0" value="F7"></labs-key>
+                    <labs-key tag="&kp F8" style="--index:0" value="F8"></labs-key>
+                    <labs-key tag="&kp F9" style="--index:0" value="F9"></labs-key>
+                    <labs-key tag="&to CLM" style="--index:0" value="CLM"></labs-key>
+
+                    <labs-key tag="&kp F11" style="--index:1" value="F11"></labs-key>
+                    <labs-key tag="&kp F4" style="--index:1" value="F4"></labs-key>
+                    <labs-key tag="&kp F5" style="--index:1" value="F5"></labs-key>
+                    <labs-key tag="&kp F6" style="--index:1" value="F6"></labs-key>
+                    <labs-key tag="&to QWERTY" style="--index:1" value="QWERTY"></labs-key>
+
+                    <labs-key tag="&kp F10" style="--index:2" value="F10"></labs-key>
+                    <labs-key tag="&kp F1" style="--index:2" value="F1"></labs-key>
+                    <labs-key tag="&kp F2" style="--index:2" value="F2"></labs-key>
+                    <labs-key tag="&kp F3" style="--index:2" value="F3"></labs-key>
+                    <labs-key tag="&none" style="--index:2" value="None"></labs-key>
+
+                    <labs-key tag="&trans" style="--index:3" value="Trans"></labs-key>
+                    <labs-key tag="&trans" style="--index:3" value="Trans"></labs-key>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="scene">
+            <div class="keyboard">
+                <div class="left">
+                    <labs-key tag="&none" style="--index:0" value="None"></labs-key>
+                    <labs-key tag="&none" style="--index:0" value="None"></labs-key>
+                    <labs-key tag="&none" style="--index:0" value="None"></labs-key>
+                    <labs-key tag="&none" style="--index:0" value="None"></labs-key>
+                    <labs-key tag="&none" style="--index:0" value="None"></labs-key>
+
+                    <labs-key tag="&sk LALT" style="--index:1" value="LALT"></labs-key>
+                    <labs-key tag="&sk LGUI" style="--index:1" value="LGUI"></labs-key>
+                    <labs-key tag="&kp RSHIFT" style="--index:1" value="RSHIFT"></labs-key>
+                    <labs-key tag="&sk LCTL" style="--index:1" value="LCTL"></labs-key>
+                    <labs-key tag="&none" style="--index:1" value="None"></labs-key>
+
+                    <labs-key tag="&bt BT_CLR_ALL" style="--index:2" value="BT_CLR_ALL"></labs-key>
+                    <labs-key tag="&none" style="--index:2" value="None"></labs-key>
+                    <labs-key tag="&bt BT_CLR" style="--index:2" value="BT_CLR"></labs-key>
+                    <labs-key tag="&bt BT_PRV" style="--index:2" value="BT_PRV"></labs-key>
+                    <labs-key tag="&bt BT_NXT" style="--index:2" value="BT_NXT"></labs-key>
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <labs-key tag="&kp RET" style="--index:3" value="RET"></labs-key>
+                    <labs-key tag="&mo NUMB" style="--index:3" value="Mo(NUMB)"></labs-key>
+                </div>
+
+                <div class="right">
+                    <labs-key tag="&kp EQUAL" style="--index:0" value="EQUAL"></labs-key>
+                    <labs-key tag="&kp N7" style="--index:0" value="N7"></labs-key>
+                    <labs-key tag="&kp N8" style="--index:0" value="N8"></labs-key>
+                    <labs-key tag="&kp N9" style="--index:0" value="N9"></labs-key>
+                    <labs-key tag="&kp PLUS" style="--index:0" value="PLUS"></labs-key>
+
+                    <labs-key tag="&kp STAR" style="--index:1" value="STAR"></labs-key>
+                    <labs-key tag="&kp N4" style="--index:1" value="N4"></labs-key>
+                    <labs-key tag="&kp N5" style="--index:1" value="N5"></labs-key>
+                    <labs-key tag="&kp N6" style="--index:1" value="N6"></labs-key>
+                    <labs-key tag="&kp MINUS" style="--index:1" value="MINUS"></labs-key>
+
+                    <labs-key tag="&kp N0" style="--index:2" value="N0"></labs-key>
+                    <labs-key tag="&kp N1" style="--index:2" value="N1"></labs-key>
+                    <labs-key tag="&kp N2" style="--index:2" value="N2"></labs-key>
+                    <labs-key tag="&kp N3" style="--index:2" value="N3"></labs-key>
+                    <labs-key tag="&kp SLASH" style="--index:2" value="SLASH"></labs-key>
+
+                    <labs-key tag="&trans" style="--index:3" value="Trans"></labs-key>
+                    <labs-key tag="&trans" style="--index:3" value="Trans"></labs-key>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+  @keyframes show {
+entry 0%  {
+    filter: blur(10rem)  ;
+}
+
+entry 100%  {
+    filter: blur(0rem);
+}
+
+exit 0%{
+    filter: blur(0rem);
+    /*--rotate-x: 0deg;*/
+}
+
+exit 100%{
+    filter: blur(10rem);
+    /*--rotate-x: -20deg;*/
+}
+}
+
+
+@keyframes slide-up {
+    to {
+        translate: 0 var(--end-pos);
+    }
+
+}
+
+@keyframes show2 {
+entry 0%  {
+   opacity: 0.2;
+}
+
+entry 100%  {
+    opacity: 1;
+}
+
+exit 0%{
+    opacity: 1;
+
+}
+
+exit 100%{
+    opacity: 0.2;
+
+}
+}
+
+</style>
+<!-- partial -->
+  
+   <script  src="./script.js"></script> 
+
+</body>
+</html>
